@@ -1,0 +1,150 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    word-break: keep-all;
+
+}
+.header {
+    display: flex;
+    flex-direction: column;
+}
+.logo {
+    display: flex;
+    justify-content: space-between;
+    background-color: darkseagreen;
+    padding: 10px;
+}
+img {
+    width: 100px;
+}
+h1 {
+    margin-top: 32px;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+}
+.content, .bottom, .container {
+    background-color: azure;
+    text-align: justify;
+}
+.top {
+    display: flex;
+    flex-direction: row; 
+}
+.nav {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    padding: 7px;
+    padding-right: 40%;
+    margin: 2px 0;
+    padding-left: 20px;
+    background-color: darkseagreen;
+    }
+li {
+    list-style-type: square;
+}
+.nav a {
+     text-decoration: none;
+ }
+.left {
+    width: 15%;
+    height: 400px;
+    padding: 10px;
+}
+li {
+    flex-wrap: nowrap;
+}
+.right {
+    width: 85%;
+    height: 400px;
+    padding: 10px; 
+}
+.first {
+    padding-left: 50px;
+    padding-right: 100px;
+}
+.bottom {
+    display: flex;
+    flex-direction: row; 
+}
+.left-bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    height: 200px;
+    padding: 10px;
+}
+.left-bottom h3 {
+    display: flex;
+    align-self: flex-start;
+    margin: 0 0 10px 0;
+}
+h3 {
+  color: green;  
+  padding-left: 20px;
+}
+.right-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+    height: 200px;
+    padding: 10px;
+
+}
+.footer {
+    display: flex;
+    flex-direction: column;
+    background-color: darkseagreen;
+}
+.footer-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+h4 {
+    padding-left: 30px;
+}
+a:hover {
+  font-weight: bold;
+  color: blue;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .top, .bottom, .footer, .nav, .footer-bottom {   
+    flex-direction: column;
+    overflow: auto;
+    padding-right: 20px;
+  }
+  .left, .right, .left-bottom, .right-bottom {
+      width: 100%;
+  }
+  .left {
+      height: 330px ;
+  }
+  .left-bottom{
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    height: 150px;
+}
+.left-bottom h3 {
+    display: flex;
+    align-self: center;
+    padding-right: 30px;
+}
+  .first {
+    padding: 0;
+ }
+}

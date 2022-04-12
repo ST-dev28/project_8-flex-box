@@ -1,0 +1,59 @@
+.flex-container {
+    display: flex;
+    border: 2px solid black;
+}
+.flex-item {
+    border: 1px dashed red;
+    margin: 10px;
+}
+.flex-inline-container {
+    display: inline-flex;
+    border: 2px solid black;
+}
+.flex-redirection-container {
+    display: flex;
+    border: 2px solid black;
+    flex-direction: row-reverse; /*elements are set in a row in reverse order mirrored*/
+}
+.flex-column-container {
+    display: flex;
+    border: 2px solid black;
+    flex-direction: column-reverse;
+}
+.flex-wrap-container {
+    display: flex;
+    border: 2px solid black;
+    flex-wrap: wrap;
+}
+.flex-flow-container {
+    display: flex;
+    height: 100px;
+    border: 2px solid black;
+    flex-flow: wrap;
+}
+.flex-justify-container {
+    display: flex;
+    border: 2px solid black;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.flex-align-container {
+    display: flex;
+    border: 2px solid black;
+    height: 200px;
+    align-items: center;
+}
+.flex-align-s-container {
+    display: flex;
+    border: 2px solid black;
+    height: 200px;
+    align-items: flex-end;
+}
+.flex-align-content-container {
+    display: flex;
+    border: 2px solid black;
+    height: 200px;
+    flex-wrap: wrap;
+    align-content: stretch;
+}
